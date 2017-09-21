@@ -1,0 +1,141 @@
+\documentclass[10pt,letterpaper,bibliography=totocnumbered]{scrartcl}
+
+\usepackage[letterpaper,margin=1.2in]{geometry}
+\usepackage{helvet}
+\usepackage{graphicx}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\usepackage[all]{hypcap} 
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage[T1]{fontenc}
+\usepackage{verbatim}
+\usepackage[parfill]{parskip}
+
+\lstset{
+    basicstyle=\scriptsize,
+    numbers=left,
+    numberstyle=\scriptsize,
+    stepnumber=1,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    frame=shadowbox,
+    tabsize=4,
+    captionpos=b,
+    breaklines=true,
+    breakatwhitespace=false,
+    keywordstyle=\color{blue!70},
+    commentstyle=\color{red!50!green!50!blue!50},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    numberbychapter=false,
+    stringstyle=\ttfamily
+}
+
+\setcounter{tocdepth}{2}
+
+\hypersetup{
+    colorlinks=true,
+    breaklinks=true,
+    urlcolor=blue,
+    linkcolor=black
+}
+
+\begin{document}
+
+\author{Orkun Krand}
+\title{Assignment 1}
+\subtitle{Fall 2017\\ CS834 Introduction to Information Retrieval\\ Dr. Michael Nelson}
+\maketitle
+\newpage
+
+\section{Question 1.1}
+\subsection {Question}
+Think up and write down a small number of queries for a web search engine.
+Make sure that the queries vary in length (i.e., they are not all one word). Try
+to specify exactly what information you are looking for in some of the queries.
+Run these queries on two commercial web search engines and compare the top
+10 results for each query by doing relevance judgments. Write a report that answers
+at least the following questions: What is the precision of the results? What
+is the overlap between the results for the two search engines? Is one search engine
+clearly better than the other? If so, by how much? How do short queries perform
+compared to long queries?
+
+\subsection{Methodology}
+\href{www.google.com}{Google} and \href{www.yahoo.com}{Yahoo!} will be used for this experiment. I will be using the incognito mode in Chrome.
+By now, we have all heard of Psy, the Korean pop star. He is the singer of \href{https://www.youtube.com/watch?v=9bZkp7q19f0}{``Gangnam Style''} which is the first video on \href{www.youtube.com}{YouTube} that exceeded YouTube's upper view limit\cite{upperviewlimit}. After his success, he collaborated with Snoop Dogg in 2014 to make a new song called \href{https://www.youtube.com/watch?v=HkMNOlYcpHg}{``Hangover''}. With the search terms I use, I will actually be trying to get the link to the music video of this song.
+The following search queries were issued to the two search engines:
+
+\begin{enumerate}
+    \item korean pop star hangover
+    \item psy drunk
+    \item gangnam style snoop dogg
+    \item drop it like it's hot singer psy song
+    \item psy snoop dogg
+\end{enumerate}
+
+\subsection{Analysis}
+Both search engines returned similar results. Only one of the search terms (number 4) failed to produce the result I was looking for. 
+
+\subsubsection{Korean pop star hangover song}
+Both search engines were able to figure out that I'm looking for the song but Yahoo! search's video results didn't show the song's music video, even though the first result after the video results was the link to the music video. Google's other results were for articles written about the song.\\
+
+Yahoo! on the other hand showed more irrelevant results than Google including a news article on Yahoo! that was about a Korean convenience store. There is another article about K-pop stars and drugs. So if we think of a score system where the number of links that are related to what I wanted to find in any way receive a point, Google will receive 10 points while Yahoo! receives 5. Those 5 good results even include Wikipedia pages for the singer and the song. Interesting enough, the image results for this search on Yahoo! are all screenshots from the music video I'm looking for. \\
+
+Google did a better job not only presenting relevant results but also ordering the results in a useful way where the music video is number 1 followed by the Wikipedia page for the song. The image results on Google seem to have more to do with Psy than the song.
+
+\subsubsection{Psy drunk}
+Since hangover comes after drinking, I figured `drunk' is a close enough term that should produce good results. However, good results were hard to find in Google. Funny enough, Google realized that I was looking for the song and showed me its music video/information box before the search results. The problem is that the YouTube link it showed was a link to something called ``PSY IS DRUNK AND NAKED IN A TRAIN - Gangnam STYLE...'' which was a video of a picture of an Asian man lying on the floor of a train, sleeping. It wasn't even Psy. It had the lyrics of the song I wanted and more information about it but the link was off by miles. Image results were all screenshots from the music video. The other videos were a live show of Psy and another video that seemed like spam. The rest of the results are about interviews with Psy. Based on the scoring system discussed earlier, Google gets 2 points out of 10. \\
+
+Yahoo! on the other hand was better and worse than Google at the same time. It showed the link to the video as the first text result, had 2 links to the music video in the video results but after that, lost its track and figured I meant `psychology' when I typed Psy and therefore showed me a bunch of websites that had to do with the psychology of drunk people. Yahoo! gets a 2 out of 10 as well not including the video results. But it also totally missed the point with the whole psychology spree. \\
+
+I understand that this is a long shot when we think of search queries. Either way, I expected Google to have a higher score. Showing interviews about Psy makes sense since I didn't have anything that referred to Snoop Dogg and apparently Psy has a drinking problem. 
+
+\subsubsection{Gangnam Style Snoop Dogg}
+Apparently, this was an easy query since both engines got 10 out of 10. Even the first 4 results were the same. Both search engines were able to associate Gangnam Style with Psy. I guess gangnam style is a very unique combination of words, especially considering I'm doing these searches from the United States. \\
+
+Interestingly for this query, Yahoo! didn't choose to show me a tab of video results but instead, it showed me youtube links as text results. Google was on point with the main music video as the big video link, and the other 2 videos with thumbnails. 
+
+\subsubsection{drop it like it's hot singer psy song}
+I figured if Gangnam Style can be linked to Psy, drop it like it's hot should be linked to Snoop Dogg, I even added the word song at the end to help the search engine out. Both engines showed me music videos for `Drop It Like It's Hot' by Snoop Dogg and not the music video I was looking for. Google was able to show me two articles about Psy, one of which is about the song `Hangover' and the other is an article written before `Hangover' came out. It just says Gangnam Style's beat sounds like a fusion of Snoop Dogg's `Drop It Like It's Hot'. The one link that is related to `Hangover' was number 7 on the top 10 results.\\
+
+There might be a couple reasons for this. For example, the search engines might have decided to ignore the word `Psy' because it is not in the dictionary. Or maybe it has to do with Snoop Dogg's song having a very long name. Assuming search engines prioritize the words in the order they were put on, it's normal for the engines to ignore `Psy' since it is only one word out of 7. Weird enough, Google didn't bother to show the official music video for `Drop It Like It's Hot' either.
+
+\subsubsection{psy snoop dogg}
+This was my safe bet. I figured this would absolutely find me the music video and it did since these two singers never collaborated on anything else before or since `Hangover'. I was right, the first result was the link to the YouTube link of the music video. Google included the Wikipedia link for the song while Yahoo! didn't. Since this was the safe bet, I think the performance of the search engines on this query easily shows which is the better search engine.
+
+\subsection{Results}
+It is safe to say that Google is the better search engine but Yahoo! wasn't as bad as I was afraid. I would say it is a good alternative to Google if Google shuts down some day. I never realized how nice it is to not have ads on a search result page until I tried Yahoo! even though the ad is for the song. It received higher relativity scores than Yahoo! on all search results, even though Yahoo! claims to have found more results than Google (517,000 vs. 2,470,000 for the last query)
+
+
+\section{Question 1.2}
+\subsection{Question}
+\textit{Site search} is another common application of search engines. In this case,
+search is restricted to the web pages at a given website. Compare site search to
+web search, vertical search, and enterprise search.
+
+\subsection{Methodology}
+\textit{Search Engines: Information Retrieval in Practice} \cite{classtext} was used to answer this question.
+
+\subsection{Answer}
+Site search, as stated in the question, is searching a query on a single website. Forum searches can be an example of this. When I'm searching why my 1978 Honda CB400T dies after riding on the highway, searches on a variety of motorcycle forums is not ideal since I want the opinion of people who have been dealing with the same type of bike that I have, especially since carburetor technology has vastly advanced in the past 40 years and is almost not used anymore. So a site search allows me to only search within the \href{www.hondatwins.net}{HondaTwins forum}, disregarding opinions of Kawasaki Ninja owners.\\
+
+Web search is easily done using a search engine which searches the whole web (not just one website) for websites that have something to do with the search query. The search engines are rated based on how well they retrieve what the user is looking for. The more a search engine can read the user's mind, the better it is considered. Because web search requires searching many websites, it is a much more cumbersome job than site search. \\
+
+Vertical search is a search for results in the same topic. \href{www.indeed.com}{Indeed} is a good example for vertical search. Indeed searches for terms in job postings from various company websites. It searches many websites so it is a search engine but all it finds are job postings, so all the results are about a single topic which makes it vertical search. Vertical search is similar to site search in that it has a smaller domain than web search. But site search is still working with a much smaller pool of data. \\
+
+Enterprise search is searching the database or databases of a company intranet. For example when you go to your auto parts store, and ask them for spark plugs for a 1966 Ford Galaxie, assuming their database contains that information, they will be able to show you the spark plugs they have in stock, and ones they can order. If you decide to pick up the NGK ones that are in stock, the salesperson will then look up its location on their screen and then go into the back to find that part and bring it for check out. This type of search is similar to site search in that the pool of data is much smaller than vertical or web searches, which is supposed to provide faster processing times even though my local auto parts store's system never seems to work right. Must be something the programmers are missing.
+
+
+\section{Question 1.4}
+\subsection{Question}
+List five web services or sites that you use that appear to use search, \textit{not} including
+web search engines. Describe the role of search for that service. Also describe
+whether the search is based on a database or grep style of matching, or if the search
+is using some type of ranking.
+\subsection{Answer}
+\subsubsection{YamahaFZ1OA}
+\href{www.yamahafz1oa.com}{Yamaha FZ1 Owners Association} is a forum for Yamaha FZ1 owners. It's a platform where we discuss anything and everything about the FZ1. The website also features a search which I've used on many occasions. It is placed so people search for answers to their questions that may have already been discussed rather than asking the same thing all over again. For example, Ivan's ECU flash has been bought and used by many members and naturally, there are many threads already available discussing it in depth with input from Ivan himself. Creating a new thread asking for information about Ivan's flash is unnecessary if users can do a search. 
+
+\end{document}
