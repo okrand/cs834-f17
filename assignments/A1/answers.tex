@@ -52,15 +52,8 @@
 
 \section{Question 1.1}
 \subsection {Question}
-Think up and write down a small number of queries for a web search engine.
-Make sure that the queries vary in length (i.e., they are not all one word). Try
-to specify exactly what information you are looking for in some of the queries.
-Run these queries on two commercial web search engines and compare the top
-10 results for each query by doing relevance judgments. Write a report that answers
-at least the following questions: What is the precision of the results? What
-is the overlap between the results for the two search engines? Is one search engine
-clearly better than the other? If so, by how much? How do short queries perform
-compared to long queries?
+Think up and write down a small number of queries for a web search engine. Make sure that the queries vary in length (i.e., they are not all one word). Try to specify exactly what information you are looking for in some of the queries. Run these queries on two commercial web search engines and compare the top 10 results for each query by doing relevance judgments. Write a report that answers at least the following questions: What is the precision of the results? What is the overlap between the results for the two search engines? Is one search engine
+clearly better than the other? If so, by how much? How do short queries perform compared to long queries?
 
 \subsection{Methodology}
 \href{www.google.com}{Google} and \href{www.yahoo.com}{Yahoo!} will be used for this experiment. I will be using the incognito mode in Chrome.
@@ -111,9 +104,7 @@ It is safe to say that Google is the better search engine but Yahoo! wasn't as b
 
 \section{Question 1.2}
 \subsection{Question}
-\textit{Site search} is another common application of search engines. In this case,
-search is restricted to the web pages at a given website. Compare site search to
-web search, vertical search, and enterprise search.
+\textit{Site search} is another common application of search engines. In this case, search is restricted to the web pages at a given website. Compare site search to web search, vertical search, and enterprise search.
 
 \subsection{Methodology}
 \textit{Search Engines: Information Retrieval in Practice} \cite{classtext} was used to answer this question.
@@ -136,6 +127,22 @@ whether the search is based on a database or grep style of matching, or if the s
 is using some type of ranking.
 \subsection{Answer}
 \subsubsection{YamahaFZ1OA}
-\href{www.yamahafz1oa.com}{Yamaha FZ1 Owners Association} is a forum for Yamaha FZ1 owners. It's a platform where we discuss anything and everything about the FZ1. The website also features a search which I've used on many occasions. It is placed so people search for answers to their questions that may have already been discussed rather than asking the same thing all over again. For example, Ivan's ECU flash has been bought and used by many members and naturally, there are many threads already available discussing it in depth with input from Ivan himself. Creating a new thread asking for information about Ivan's flash is unnecessary if users can do a search. 
+\href{www.yamahafz1oa.com}{Yamaha FZ1 Owners Association} is a forum for Yamaha FZ1 owners. It's a platform where we discuss anything and everything about the FZ1. The website also features a search which I've used on many occasions. It is placed so people search for answers to their questions that may have already been discussed rather than asking the same thing all over again. For example, Ivan's ECU flash has been bought and used by many members and naturally, there are many threads already available discussing it in depth with input from Ivan himself. Creating a new thread asking for information about Ivan's flash is unnecessary if users can do a search. \\
+
+This website uses a grep style search where it will bring up all the threads that have the query you searched for ranked by date (newest first) and upon clicking on one of the threads, will highlight your query for easier navigation.
+
+\subsubsection{Spotify}
+\href{www.spotify.com}{Spotify} is a music streaming service that lets users play any songs or playlists they want. You can search for a specific song, artist, album or even a playlist that was created by another user. Spotify does a database search, shows the results in categories (song, artist, album...) and ranks them using crowdsourced votes and machine learning so when you type `e', it can decide to show you Elvis or Eminem. They also use a system called search-as-you-type\cite{search-as-you-type}\href{https://www.youtube.com/watch?v=IFRKLBuuXCA} which basically updates the result as the user types without requiring to submit the query once done typing. 
+
+\subsubsection{Telegram}
+\href{www.telegram.org}{Telegram Messenger} is a messaging app similar to Facebook Messenger and WhatsApp. It features two types of search on their website/application. I can do a search within a chat, and I can do a search amongst the people I've been chatting with or anybody on the application. For example, I talk to my girlfriend on Telegram often and I can find all the times we said `motorcycle' simply by typing it in the search box. It would show newest first. It uses a grep style search and just shows every message where anybody in the conversation used the term `motorcycle'.
+
+\subsubsection{Revzilla}
+\href{www.revzilla.com}{Revzilla} is one of the biggest motorcycle accessory and gear retail websites I know of. They only have an online store so search is very important for them. Any time someone can't find what they are looking for, they lose money. They don't have any fancy systems like search-as-you-type or showing little thumbnails of products as you type. But if I type FZ1, I can find all the parts they have that fit my bike even if it doesn't have FZ1 in the name (ex. Yoshimura TRC Carbon Fiber Exhaust) and most times, that's all I want. I use Revzilla mostly for safety gear which is less specific and typing `Shoei' in the search box brings me helmets ranked by popularity, followed by helmet accessories. It does a database search to see what helmets they have, I can pick models, colors, year and type of helmet once the initial results come back. 
+
+\subsubsection{Partzilla}
+\href{www.partzilla.com}{Partzilla} is an online OEM and aftermarket parts seller. Similar to Revzilla, Partzilla only has an online store as well. They sell parts for lawn mowers, motorcycles, jet-skis, snowmobiles and so on. Their search function is a little primitive unless you can narrow down what you are looking for very well. I can look up part numbers, but along with the part I want, it would show me parts whose part numbers closely match my query which is a bad idea when it comes to OEM parts since manufacturers use similar part numbers for similar parts. If I'm searching for a brake caliper for a 2012 Yamaha Super Tenere and I put the part number in the search box, search results also show me similar part numbers, which are generally brake calipers that fit other bikes or sometimes ATVs which is useless to me. Especially since they don't immediately show what vehicles those other parts fit. \\
+
+The search box is not their strong suit but then again, nobody really uses it. Everyone wants to look at the OEM parts fiche for their vehicles and select parts from there. That's why this is a great example of a badly developed search box. Trying to search the term `fz1 brake caliper' brought me an aftermarket part that fits early 1980s Harley Davidson Electra Glides. 
 
 \end{document}
