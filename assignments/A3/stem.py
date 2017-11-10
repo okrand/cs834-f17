@@ -11,9 +11,9 @@ class Result(object):
         self.t2 = t2
 
     def getdice(self):
-        sett1 = set(stems2[self.t1])
+        sett1 = set(wordlist2[self.t1])
         Nt1 = float(len(sett1))
-        sett2 = set(stems2[self.t2])
+        sett2 = set(wordlist2[self.t2])
         Nt2 = float(len(sett2))
         sett = sett1.intersection(sett2)
         Nt = float(len(sett))
@@ -39,6 +39,7 @@ except IOError:
     cPickle.dump(wordlist, open('wordlist.p', 'wb'))
     wordlist = cPickle.load(open('wordlist.p', 'rb'))
 
+wordlist2 = wordlist
 wordlist = sorted(wordlist.keys())[15000:16000]
 
 snowball = SnowballStemmer('english')
@@ -48,8 +49,8 @@ stems2 = {}
 for key, val in stems.items():
 	if dupcount[val] > 1:
 		stems2[key] = val
+
 classes = {}
-print("Before for loop")
 for pair in combinations(stems2.items(), 2):
     k1 = pair[0][0]
     k2 = pair[1][0]
@@ -71,11 +72,27 @@ for stem, term in classes.items():
             results[stem] = set()
         results[stem].add(Result(t1, t2))
 print("Results ready")
+r = convert(results)
+for stemclass in r.items():
+    try:
+        print(stemclass[0] + ": " + ', '.join(stemclass[1]) + "\\\\")
+    except UnicodeDecodeError:
+        pass
 
-filtered1 = {stem: [r for r in resultset if r.getdice() > 0.1] for stem, resultset in results.items()}
+filtered1 = {stem: [r for r in resultset if (r.getdice() > 0.1)] for stem, resultset in results.items()}
 c1 = convert(filtered1)
 print ("C1 Results")
 for stemclass in c1.items():
+    try:
+        print(stemclass[0] + ": " + ', '.join(stemclass[1]) + "\\\\")
+    except UnicodeDecodeError:
+        pass
+
+
+filtered2 = {stem: [r for r in resultset if (r.getdice() > 0.000001)] for stem, resultset in results.items()}
+c2 = convert(filtered2)
+print ("C2 Results")
+for stemclass in c2.items():
     try:
         print(stemclass[0] + ": " + ', '.join(stemclass[1]) + "\\\\")
     except UnicodeDecodeError:

@@ -2,6 +2,7 @@
 
 \usepackage[letterpaper,margin=1.2in]{geometry}
 \usepackage{helvet}
+\usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage[hyphens]{url}
 \usepackage{hyperref}
@@ -67,7 +68,8 @@ Compare the stem clusters to the stem classes in terms of size and the quality (
 \href{https://docs.python.org/2.3/lib/module-cPickle.html}{CPickle} was utilized to speed processes up. I created the \texttt{stem.py} script to define the initial stem classes from the list of 1,000 words.  This list was created using the inverted index I created for assignment 2. Roughly the first 15,000 items in list were/had digits so I used entries between 15,000 and 16,000. I used a threshold of 0.1 to clean up my result. Any stemmed words that exists in each class with a score lower than 0.1 were removed from their class. 
 
 \subsection{Results}
-Initially converting each letter to lowercase resulted in more stems than I expected. The script returned 70 stem classes.
+The initial stemming of the 1,000 words produced the following stem classes:
+
 \noindent
 aln: aln, alnes\\
 alo: aloe, aloes\\
@@ -79,52 +81,51 @@ alkalin: alkaline, alkalinity\\
 alexandrin: alexandrines, alexandrine\\
 allori: allori, allory\\
 alley: alleys, alley\\
-alfieri: alfieri, alfieris\\
 alien: alienated, alienate, aliens, alien, alienation, alienates, alienating\\
-alpin: alpin, alpine, alpines\\
+alpin: alpin, alpines, alpine\\
 alexandr: alexandr, alexandre\\
 alfr: alfre, alfred, alfr\\
-alt: alte, altes, alt\\
+almanac: almanacs, almanac\\
+alt: alt, altes, alte\\
 allergi: allergies, allergy\\
 allig: alligator, alligators\\
 altdorf: altdorfer, altdorf\\
-alp: alpes, alps, alpe, alp\\
-almon: almoners, almoner\\
+alp: alps, alpes, alpe, alp\\
+alma: alma, almas\\
 allemand: allemandes, allemande\\
 allel: alleles, allele\\
 allegori: allegories, allegory\\
 allo: allo, allos\\
 alphabet: alphabetical, alphabetically, alphabet, alphabetized, alphabetic, alphabets\\
 altitud: altitude, altitudes\\
-allyl: allylic, allyl\\
-alli: allies, allis, alli, allying, allied, allie, ally\\
-allud: allude, alluded, alludes\\
+algebra: algebraic, algebras, algebraically, algebra\\
+alli: allies, allis, alli, allying, allied, ally, allie\\
+alfi: alfie, alfy\\
 almont: almont, almonte\\
 aleutian: aleutians, aleutian\\
-altar: altars, altar\\
 almshous: almshouse, almshouses\\
-algorithm: algorithmic, algorithms, algorithm\\
-alter: altered, altering, alterations, alteration, alters, alter\\
-altern: alternator, alternating, alternators, alternated, alternately, alternate, alternatives, alterning, alternatively, alternative, alternations, alternates\\
-almoravid: almoravid, almoravids\\
+alter: altered, altering, alteration, alterations, alters, alter\\
+altern: alternator, alternating, alternators, alternated, alternatively, alternate, alternatives, alternately, alterning, alternative, alternations, alternates\\
+alphen: alphen, alphenal\\
 almond: almond, almonds\\
-allow: allows, allowing, allow, allowed, allowe, allowances, allowable, allowance\\
-algebra: algebraic, algebras, algebraically, algebra\\
-alfi: alfie, alfy\\
+alin: aline, alin\\
+allyl: allylic, allyl\\
+altar: altars, altar\\
 algar: algars, algar\\
 alexi: alexie, alexi, alexis\\
+alloc: allocates, allocation, allocate, allocations, allocated, allocating\\
 allstar: allstar, allstars\\
 allotrop: allotrope, allotropes\\
 allus: allusion, allusions\\
 allur: alluring, allure\\
 algarv: algarve, algarves\\
-alphen: alphen, alphenal\\
+almoravid: almoravid, almoravids\\
 alleg: allegedly, alleging, allegations, alleged, allegation, alleges, allege\\
-alloc: allocates, allocation, allocate, allocations, allocated, allocating\\
+allud: allude, alluded, alludes\\
 alik: alikes, alike\\
 alex: alex, alexs\\
-alma: alma, almas\\
-alin: aline, alin\\
+algorithm: algorithmic, algorithms, algorithm\\
+almon: almoners, almoner\\
 alkyl: alkyl, alkylating\\
 alia: alia, alias\\
 align: aligning, align, alignable, aligns, aligned, alignments, alignment\\
@@ -133,13 +134,56 @@ alon: alone, alones, alon\\
 alor: alor, alors\\
 alias: aliasing, aliases\\
 alouett: alouettes, alouette\\
-allot: allotted, allot, allotment\\
-almanac: almanacs, almanac\\
+allot: allotment, allot, allotted\\
+allow: allows, allowing, allow, allowed, allowe, allowances, allowable, allowance\\
 alloy: alloy, alloys, alloyed\\
 alland: alland, allande\\
 alga: alga, algae\\
 allianc: alliance, alliances\\
 allevi: alleviating, alleviate\\
+alfieri: alfieri, alfieris\\
+
+The following is the stem classes produced when I introduced Dice's coefficient into the mix. I tested the code with two different thresholds (0.1 and 0.0001) to confirm that the threshold was working. As expected, the lower threshold, included more stems and words. Qualitywise, the following classes seem more refined compared to the initial results since it only includes strongly linked words. 
+\noindent
+0.1 Results\\
+almoravid: almoravid, almoravids\\
+alloc: allocation, allocating, allocate, allocations\\
+allotrop: allotrope, allotropes\\
+almon: almoners, almoner\\
+algorithm: algorithmic, algorithms, algorithm\\
+algebra: algebraic, algebraically\\
+align: aligning, alignable\\
+alkaloid: alkaloids, alkaloid\\
+alexandrin: alexandrines, alexandrine\\
+alleg: allegation, alleges, alleged, allegedly\\
+aleutian: aleutians, aleutian\\
+allow: allowances, allows, allow, allowance\\
+almshous: almshouse, almshouses\\
+alter: alterations, alteration\\
+allot: allotment, allotted\\
+
+0.00001 Results\\
+altern: alternating, alternator, alternatively, alternate, alternatives, alternative\\
+almoravid: almoravid, almoravids\\
+alloc: allocation, allocating, allocate, allocations\\
+allotrop: allotrope, allotropes\\
+almon: almoners, almoner\\
+algorithm: algorithmic, algorithms, algorithm\\
+algebra: algebraic, algebraically, algebra\\
+alphabet: alphabet, alphabetical\\
+altitud: altitude, altitudes\\
+alkaloid: alkaloids, alkaloid\\
+alexandrin: alexandrines, alexandrine\\
+alleg: allegedly, allegations, alleged, allegation, alleges, allege\\
+alli: allied, allies, ally\\
+allianc: alliance, alliances\\
+alien: alien, aliens\\
+align: aligning, alignable\\
+aleutian: aleutians, aleutian\\
+allow: allows, allowing, allow, allowed, allowe, allowances, allowance\\
+almshous: almshouse, almshouses\\
+alter: alterations, alteration\\
+allot: allotment, allotted\\
 
 \section{Question 6.2}
 \subsection {Question}
