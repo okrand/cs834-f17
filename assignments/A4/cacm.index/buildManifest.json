@@ -1,0 +1,43 @@
+{
+  "corpus" : true,
+  "corpusParameters" : {
+    "blockSize" : 512,
+    "filename" : "/Users/Krando67/Desktop/CS734 - Info Retrieval/galago-3.12/../cs834-f17/assignments/A4/cacm.index/corpus",
+    "mergerClass" : "org.lemurproject.galago.core.index.merge.CorpusMerger",
+    "readerClass" : "org.lemurproject.galago.core.index.corpus.CorpusReader",
+    "tokenizer" : {
+      "fields" : [ ],
+      "formats" : {
+
+      }
+    },
+    "writerClass" : "org.lemurproject.galago.core.index.corpus.CorpusFolderWriter"
+  },
+  "fieldIndex" : false,
+  "fieldIndexParameters" : {
+    "nonStemmedPostings" : true,
+    "stemmedPostings" : true,
+    "stemmer" : [ "krovetz"]
+  },
+  "galagoVersion" : "3.12",
+  "galagoVersionBuildDateTime" : "2017-12-04 18:01",
+  "indexBuildDateTime" : "2017-12-04 13:58",
+  "indexPath" : "/Users/Krando67/Desktop/CS734 - Info Retrieval/galago-3.12/../cs834-f17/assignments/A4/cacm.index",
+  "inputPath" : [ "/Users/Krando67/Desktop/CS734 - Info Retrieval/galago-3.12/../cs834-f17/assignments/A4/cacm"],
+  "nonStemmedPostings" : true,
+  "server" : true,
+  "skipDistance" : 500,
+  "skipping" : true,
+  "stemmedCounts" : false,
+  "stemmedPostings" : true,
+  "stemmer" : [ "krovetz"],
+  "stemmerClass" : {
+    "krovetz" : "org.lemurproject.galago.core.parse.stem.KrovetzStemmer"
+  },
+  "tokenizer" : {
+    "fields" : [ ],
+    "formats" : {
+
+    }
+  }
+}
