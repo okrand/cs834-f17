@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  9 DEC 2017 13:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  15 DEC 2017 19:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -788,24 +788,24 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 54.
 
-<clutch.png, id=73, 548.0475pt x 669.50125pt>
+<clutch.png, id=89, 548.0475pt x 669.50125pt>
 File: clutch.png Graphic file (type png)
  <use clutch.png>
 Package pdftex.def Info: clutch.png used on input line 64.
 (pdftex.def)             Requested size: 274.02307pt x 334.7498pt.
- [2 <./clutch.png>] <low_quality.png, id=81, 645.41125pt x 208.78pt>
+ [2 <./clutch.png>] <low_quality.png, id=97, 645.41125pt x 208.78pt>
 File: low_quality.png Graphic file (type png)
  <use low_quality.png>
 Package pdftex.def Info: low_quality.png used on input line 73.
 (pdftex.def)             Requested size: 322.70483pt x 104.38972pt.
 
-<reasons.png, id=82, 571.13374pt x 665.48625pt>
+<reasons.png, id=98, 571.13374pt x 665.48625pt>
 File: reasons.png Graphic file (type png)
  <use reasons.png>
 Package pdftex.def Info: reasons.png used on input line 82.
 (pdftex.def)             Requested size: 285.56618pt x 332.74231pt.
- [3 <./low_quality.png> <./reasons.png>] <ebay.png, id=92, 1252.68pt x 617.3062
-4pt>
+ [3 <./low_quality.png> <./reasons.png>] <ebay.png, id=108, 1252.68pt x 617.306
+24pt>
 File: ebay.png Graphic file (type png)
 
 <use ebay.png>
@@ -816,13 +816,13 @@ Overfull \hbox (185.49101pt too wide) in paragraph at lines 98--99
  [][] 
  []
 
-[4 <./ebay.png>] <ebay-sell.png, id=99, 314.17375pt x 155.58125pt>
+[4 <./ebay.png>] <ebay-sell.png, id=115, 314.17375pt x 155.58125pt>
 File: ebay-sell.png Graphic file (type png)
 
 <use ebay-sell.png>
 Package pdftex.def Info: ebay-sell.png used on input line 107.
 (pdftex.def)             Requested size: 157.08649pt x 77.79042pt.
- <ebay-category.png, id=100, 929.4725pt x 161.60374pt>
+ <ebay-category.png, id=116, 929.4725pt x 161.60374pt>
 File: ebay-category.png Graphic file (type png)
 
 <use ebay-category.png>
@@ -833,7 +833,7 @@ Overfull \hbox (23.88766pt too wide) in paragraph at lines 114--115
  [][] 
  []
 
-<youtube-analytics.png, id=103, 94.3525pt x 477.785pt>
+<youtube-analytics.png, id=119, 94.3525pt x 477.785pt>
 File: youtube-analytics.png Graphic file (type png)
 
 <use youtube-analytics.png>
@@ -844,7 +844,7 @@ Package pdftex.def Info: youtube-analytics.png used on input line 127.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [5 <./ebay-sell.png> <./ebay-category.png>]
-<scholar-search.png, id=114, 849.1725pt x 487.8225pt>
+<scholar-search.png, id=130, 849.1725pt x 487.8225pt>
 File: scholar-search.png Graphic file (type png)
  <use scholar-search.png>
 Package pdftex.def Info: scholar-search.png used on input line 141.
@@ -862,7 +862,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 156.
- [7 <./scholar-search.png>] <start-clutch.png, id=130, 1178.4025pt x 254.9525pt
+ [7 <./scholar-search.png>] <start-clutch.png, id=146, 1178.4025pt x 254.9525pt
 >
 File: start-clutch.png Graphic file (type png)
 
@@ -874,7 +874,7 @@ Overfull \hbox (148.35236pt too wide) in paragraph at lines 168--169
  [][] 
  []
 
-<start-black-eyed-pea.png, id=131, 1182.4175pt x 249.93375pt>
+<start-black-eyed-pea.png, id=147, 1182.4175pt x 249.93375pt>
 File: start-black-eyed-pea.png Graphic file (type png)
 
 <use start-black-eyed-pea.png>
@@ -885,7 +885,7 @@ Overfull \hbox (150.35985pt too wide) in paragraph at lines 175--176
  [][] 
  []
 
-<start-abs.png, id=132, 533.995pt x 904.37875pt>
+<start-abs.png, id=148, 533.995pt x 904.37875pt>
 File: start-abs.png Graphic file (type png)
  <use start-abs.png>
 Package pdftex.def Info: start-abs.png used on input line 182.
@@ -894,7 +894,7 @@ Package pdftex.def Info: start-abs.png used on input line 182.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<start-killers.png, id=133, 467.7475pt x 857.2025pt>
+<start-killers.png, id=149, 467.7475pt x 857.2025pt>
 File: start-killers.png Graphic file (type png)
  <use start-killers.png>
 Package pdftex.def Info: start-killers.png used on input line 189.
@@ -903,7 +903,7 @@ Package pdftex.def Info: start-killers.png used on input line 189.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<start-ford.png, id=134, 1185.42876pt x 898.35625pt>
+<start-ford.png, id=150, 1185.42876pt x 898.35625pt>
 File: start-ford.png Graphic file (type png)
  <use start-ford.png>
 Package pdftex.def Info: start-ford.png used on input line 196.
@@ -919,7 +919,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 201.
 [8 <./start-clutch.png> <./start-black-eyed-pea.png>] [9 <./start-abs.png>]
-<insta-tag1.png, id=157, 821.0675pt x 547.04375pt>
+<insta-tag1.png, id=174, 821.0675pt x 547.04375pt>
 File: insta-tag1.png Graphic file (type png)
  <use insta-tag1.png>
 Package pdftex.def Info: insta-tag1.png used on input line 216.
@@ -928,7 +928,7 @@ Package pdftex.def Info: insta-tag1.png used on input line 216.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<insta-tag2.png, id=158, 925.4575pt x 507.8975pt>
+<insta-tag2.png, id=175, 925.4575pt x 507.8975pt>
 File: insta-tag2.png Graphic file (type png)
  <use insta-tag2.png>
 Package pdftex.def Info: insta-tag2.png used on input line 225.
@@ -941,7 +941,7 @@ Overfull \hbox (21.88016pt too wide) in paragraph at lines 225--226
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10 <./start-killers.png>] <insta-spam.png, id=168, 296.10625pt x 140.525pt>
+[10 <./start-killers.png>] <insta-spam.png, id=184, 296.10625pt x 140.525pt>
 File: insta-spam.png Graphic file (type png)
 
 <use insta-spam.png>
@@ -951,27 +951,43 @@ Package pdftex.def Info: insta-spam.png used on input line 234.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 242.
 [11 <./start-ford.png>]
 
 LaTeX Warning: Text page 12 contains only floats.
 
-[12 <./insta-tag1.png> <./insta-tag2.png>] [13 <./insta-spam.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 242.
+[12 <./insta-tag1.png> <./insta-tag2.png>]
+<svm_light_results.png, id=200, 1034.86626pt x 540.0175pt>
+File: svm_light_results.png Graphic file (type png)
 
-(./answers.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 242.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 242.
+<use svm_light_results.png>
+Package pdftex.def Info: svm_light_results.png used on input line 251.
+(pdftex.def)             Requested size: 517.43185pt x 270.00809pt.
+
+Overfull \hbox (76.5844pt too wide) in paragraph at lines 251--252
+ [][] 
+ []
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 255.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+) [13 <./insta-spam.png> <./svm_light_results.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 264.
+ [14]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 264.
+ (./answers.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 264.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 264.
 Package rerunfilecheck Info: File `answers.out' has not changed.
-(rerunfilecheck)             Checksum: 9216E6DD0C34009F83DFA84442812ADB;807.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 242.
+(rerunfilecheck)             Checksum: D7652C74524E0E7765B5AA7EBC23B537;1040.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 264.
  ) 
 Here is how much of TeX's memory you used:
- 10063 strings out of 492995
- 155593 string characters out of 6132704
- 336970 words of memory out of 5000000
- 13460 multiletter control sequences out of 15000+600000
- 17643 words of font info for 27 fonts, out of 8000000 for 9000
+ 10103 strings out of 492995
+ 156538 string characters out of 6132704
+ 337006 words of memory out of 5000000
+ 13488 multiletter control sequences out of 15000+600000
+ 18724 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,7n,52p,8818b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
@@ -981,13 +997,15 @@ ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
 e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2
 017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/
-texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2017/te
-xmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2017/texm
-f-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on answers.pdf (13 pages, 5193016 bytes).
+texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2017/te
+xmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2017/texm
+f-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2017/texmf-di
+st/fonts/type1/urw/helvetic/uhvb8a.pfb>
+Output written on answers.pdf (14 pages, 7812363 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
- 45 named destinations out of 1000 (max. 500000)
- 201 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 266 PDF objects out of 1000 (max. 8388607)
+ 203 compressed objects within 3 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 238 words of extra memory for PDF output out of 10000 (max. 10000000)
 

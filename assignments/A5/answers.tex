@@ -234,6 +234,28 @@ The user that posted this picture is sponsored by BMW so it is normal to see all
 \includegraphics[scale=.5]{insta-spam.png}
 \caption{Sample spam tags}
 \end{figure}
+
+\section{Question Extra Credit}
+\subsection{Question}
+Work through the "Inductive SVM" example, discuss in detail the steps and resulting output
+
+\subsection{Methodology}
+Using the SVM\textsuperscript{light} which can be found \href{http://www.cs.cornell.edu/people/tj/svm_light/}{here}, I was able to run the example and receive the results. 
+
+\subsection{Results}
+Below is a screenshot of running SVM\textsuperscript{light} on the provided dataset as per the instructions.
+
+\begin{figure}[h!]
+\centering
+\label{fig:svm_light}
+\includegraphics[scale=.5]{svm_light_results.png}
+\caption{Results from SVM\textsuperscript{light}}
+\end{figure}
+
+The program provided the scores of 96.43\% for precision and 99\% for recall. These are expected results since the example is created by the author of the program. The \texttt{svm\_learn} executable goes through the training data and creates the support vectors, provides XiAlpha estimates and creates a model file to be used by the \texttt{svm\_classify} executable. 
+
+The \texttt{svm\_classify} executable uses the model file created by \texttt{svm\_learn} to try to classify the test data into the classifications using the support vectors and provides the performance values which are very high for this set of test data. This means that the training data is very high quality. 
+
 % \clearpage
 % \begin{thebibliography}{9}
 % \bibitem{classtext}
